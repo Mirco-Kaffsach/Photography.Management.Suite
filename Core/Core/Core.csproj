@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Photography.Management.Suite.Core</RootNamespace>
+    <PackageId>Photography.Management.Suite.Core</PackageId>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Version>0.1.0-ci.$([System.DateTime]::Now.ToString(yyMMddHHmm))</Version>
+    <CodeAnalysisRuleSet>..\.sonarlint\photography.management.suite.corecsharp.ruleset</CodeAnalysisRuleSet>
+    <Authors>Provident Software</Authors>
+    <Product>Photography Management Suite</Product>
+    <Copyright>Provident Software $([System.DateTime]::Now.ToString(yyyy))</Copyright>
+    <AssemblyName>Photography.Management.Suite.Core</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\.sonarlint\photography.management.suite.core\CSharp\SonarLint.xml" Link="SonarLint.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\CodeTypes\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Guards\" />
+    <Folder Include="Configurations\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+  </ItemGroup>
+
+   <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="[6.0.*,7.0)" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="[6.0.*,7.0)" />
+   </ItemGroup>
+
+   <ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="[7.0.*,8.0)" />
+   <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="[7.0.*,8.0)" />
+  </ItemGroup>
+
+</Project>

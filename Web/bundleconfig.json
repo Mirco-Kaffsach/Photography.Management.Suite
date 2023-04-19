@@ -1,0 +1,18 @@
+[
+   {
+      "outputFileName": "wwwroot/assets/js/app.min.js",
+      "inputFiles": [ "JavaScripts/app.js" ]
+   },
+   {
+      "outputFileName": "wwwroot/assets/js/hyper-config.min.js",
+      "inputFiles": [ "JavaScripts/hyper-config.js" ]
+   },
+   {
+      "outputFileName": "wwwroot/assets/js/vendor.min.js",
+      "inputFiles": [
+         "JavaScripts/jQuery.js",
+         "JavaScripts/bootstrap.js",
+         "JavaScripts/SimpleBar.js"
+      ]
+   }
+]

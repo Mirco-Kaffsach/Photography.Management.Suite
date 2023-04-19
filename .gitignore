@@ -1,0 +1,11 @@
+**/*/.vs/
+**/*/obj/
+**/*/bin/
+**/*/Import Schema Logs/
+*.user
+*.dbmdl
+*.jfm
+.vs/
+**/*/.sonarlint/
+**/*/.sonarqube/
+Web/node_modules/
