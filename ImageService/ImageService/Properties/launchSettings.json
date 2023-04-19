@@ -1,0 +1,31 @@
+{
+   "profiles": {
+      "https": {
+         "commandName": "Project",
+         "launchBrowser": false,
+         "launchUrl": "swagger",
+         "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development",
+            "OIDC_AUTHORITY": "https://sso.ps-net.online/realms/prosoft",
+            "OIDC_CLIENT_ID": "pms-dev",
+            "OIDC_CLIENT_SECRET": "XVopaYlTw159CElF6AJwPnMHriKNhsr3"
+         },
+         "dotnetRunMessages": true,
+         "applicationUrl": "https://localhost:32798;http://localhost:32797"
+      },
+      "Docker": {
+         "commandName": "Docker",
+         "sslPort": 32798,
+         "launchBrowser": false,
+         "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+         "publishAllPorts": true,
+         "useSSL": true,
+         "environmentVariables": {
+            "OIDC_AUTHORITY": "https://sso.ps-net.online/realms/prosoft",
+            "OIDC_CLIENT_ID": "pms-dev",
+            "OIDC_CLIENT_SECRET": "XVopaYlTw159CElF6AJwPnMHriKNhsr3"
+         }
+      }
+   },
+   "$schema": "https://json.schemastore.org/launchsettings.json"
+}

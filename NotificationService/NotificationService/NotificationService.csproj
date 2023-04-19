@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+   <PropertyGroup>
+      <TargetFramework>net7.0</TargetFramework>
+      <Nullable>enable</Nullable>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <UserSecretsId>14d62ed3-a66c-4764-a5ea-918954b4395d</UserSecretsId>
+      <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+      <DockerfileContext>.</DockerfileContext>
+      <RootNamespace>Photography.Management.Suite.NotificationService</RootNamespace>
+      <AssemblyName>Photography.Management.Suite.NotificationService</AssemblyName>
+      <SignAssembly>False</SignAssembly>
+      <Authors>Provident Software</Authors>
+      <Product>Photography Management Suite</Product>
+      <Copyright>Provident Software $([System.DateTime]::Now.ToString(yyyy))</Copyright>
+      <AssemblyVersion></AssemblyVersion>
+      <Version>0.1.0-ci.$([System.DateTime]::Now.ToString(yyMMddHHmm))</Version>
+   </PropertyGroup>
+
+   <ItemGroup>
+      <PackageReference Include="Ardalis.GuardClauses" Version="4.0.1" />
+      <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
+      <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+      <PackageReference Include="Photography.Management.Suite.Core" Version="0.1.0-ci.2304091729" />
+      <PackageReference Include="ProSoft.WebApi.ToolKit" Version="1.0.0-CI-20221028-122358" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+   </ItemGroup>
+
+</Project>

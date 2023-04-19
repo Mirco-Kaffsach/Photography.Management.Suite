@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "wwwroot/assets/css/app.css",
+    "inputFile": "Styles/app.scss"
+  },
+  {
+    "outputFile": "wwwroot/assets/css/icons.css",
+    "inputFile": "Styles/icons.scss"
+  }
+]

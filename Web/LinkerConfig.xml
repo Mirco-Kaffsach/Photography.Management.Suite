@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<linker>
+   <assembly fullname="Photography.Management.Suite.Web">
+      <!--<type fullname="MyNamespace.MyType">
+         <method signature="System.Void MyMethod()" />
+      </type>-->
+   </assembly>
+   <!--<assembly fullname="AnotherAssembly" action="copy" />-->
+</linker>

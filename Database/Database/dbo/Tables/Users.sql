@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Users] (
+    [SystemId] UNIQUEIDENTIFIER NOT NULL,
+    [Id]       INT              IDENTITY (1, 1) NOT NULL,
+    [IsLocked] BIT              CONSTRAINT [DF_Users_IsLocked] DEFAULT ((0)) NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED ([Id] ASC) WITH (FILLFACTOR = 80) ON [USER],
+    CONSTRAINT [UIX_Users_SystemId] UNIQUE NONCLUSTERED ([SystemId] ASC) WITH (FILLFACTOR = 80) ON [INDEX]
+) ON [USER];
+
